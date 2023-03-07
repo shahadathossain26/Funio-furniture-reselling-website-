@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import logo from '../../assets/logo.png'
+import { AiOutlineHome, AiOutlineDashboard } from "react-icons/ai";
+import { FaBlog } from "react-icons/fa";
+import { RiInformationLine } from "react-icons/ri";
+import './Header.css'
 
 const Header = () => {
     return (
@@ -22,12 +25,44 @@ const Header = () => {
                 <img className='w-[60px] md:w-[110px] lg:w-[170px]' src={logo} alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                {/* <ul className="menu menu-horizontal px-1">
                     <li><a href='/'>Home</a></li>
                     <li><a href='/'>About</a></li>
                     <li><a href='/'>Dashboard</a></li>
                     <li><a href='/'>Blog</a></li>
-                </ul>
+                </ul> */}
+                <div className='flex relative w-[400px] h-[70px] bg-white   justify-center items-center rounded'>
+                    <ul className='w-[350px] h-full flex justify-between items-center'>
+                        <li className="list focus:bg-black">
+                            <a href="/">
+                                <span className="icon"><AiOutlineHome></AiOutlineHome></span>
+                                <span className="text">Home</span>
+                            </a>
+                        </li>
+
+                        <li className="list">
+                            <a href="/">
+                                <span className="icon"><RiInformationLine></RiInformationLine></span>
+                                <span className="text">About</span>
+                            </a>
+                        </li>
+
+                        <li className="list">
+                            <a href="/">
+                                <span className="icon"><AiOutlineDashboard></AiOutlineDashboard></span>
+                                <span className="text">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li className="list">
+                            <a href="/">
+                                <span className="icon"><FaBlog></FaBlog></span>
+                                <span className="text">blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
             <div className="navbar-end">
                 <Link to='/login'><button className='text-[12px] md:text-[15px] lg:text-[18px] bg-black text-white px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-xl font-semibold'>LogIn</button></Link>

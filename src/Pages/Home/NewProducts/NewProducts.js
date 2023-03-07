@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper';
 import image1 from '../../../assets/new_products_images/product1.jpg'
 import image2 from '../../../assets/new_products_images/product2.jpg'
 import image3 from '../../../assets/new_products_images/product3.jpg'
@@ -36,6 +36,7 @@ const NewProducts = () => {
                         modifier: 2.5
                     }
                 }
+                autoplay={{ delay: 2000 }}
                 pagination={{ el: '.swiper-pagination', clickable: true }}
                 navigation={
                     {
@@ -44,7 +45,7 @@ const NewProducts = () => {
                         clickable: true
                     }
                 }
-                modules={[EffectCoverflow, Pagination, Navigation]}
+                modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                 className='swiper_container'
             >
                 <SwiperSlide>

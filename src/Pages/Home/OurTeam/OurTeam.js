@@ -14,7 +14,7 @@ import './OurTeam.css'
 const OurTeam = () => {
     return (
         <div className='mt-20 lg:mt-32'>
-            <div className='text-center mb-10'>
+            <div className='text-center mb-10' data-aos="fade-down" data-aos-duration="1500">
                 <h3 className='text-[14px] md:text-[16px] lg:text-xl font-semibold'>OUR CREATIVE FORCE</h3>
                 <h2 className='text-2xl md:text-3xl lg:text-5xl font-bold'>Meet our team</h2>
             </div>

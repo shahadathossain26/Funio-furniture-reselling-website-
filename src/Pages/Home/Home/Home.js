@@ -17,12 +17,14 @@ const Home = () => {
             <ProductCatagory></ProductCatagory>
             <NewProducts></NewProducts>
             <Offer></Offer>
-            <Metarials></Metarials>
-            <OurTeam></OurTeam>
-            <TrackOrder></TrackOrder>
-            <DecoCollection></DecoCollection>
             <WhyFunio></WhyFunio>
+            <Metarials></Metarials>
             <About></About>
+            <OurTeam></OurTeam>
+            <DecoCollection></DecoCollection>
+            <TrackOrder></TrackOrder>
+
+
         </div>
     );
 };

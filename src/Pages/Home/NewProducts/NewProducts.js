@@ -17,7 +17,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineHeart, AiOutlineStar,
 const NewProducts = () => {
     return (
         <div className='mb-32'>
-            <div className='text-center mb-20'>
+            <div className='text-center mb-20' data-aos="fade-down" data-aos-duration="1500">
                 <h3 className='text-[14px] md:text-[16px] lg:text-xl font-semibold'>SEE OUR</h3>
                 <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold'>New Selling Products</h2>
             </div>

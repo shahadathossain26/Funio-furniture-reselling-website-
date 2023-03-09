@@ -3,7 +3,7 @@ import offerImage from '../../../assets/homepage_banner/offer_image.jpg'
 
 const Offer = () => {
     return (
-        <div className='lg:flex justify-between items-center mt-16 w-full'>
+        <div className='lg:flex justify-between items-center mt-16 w-full' data-aos="zoom-in" data-aos-duration="1000">
             <div className='px-8 md:px-10 lg:px-16 lg:w-1/2 mb-5 lg:mb-0'>
                 <h3 className='text-[13px] md:text-[15px] lg:text-[18px] font-semibold'>Massey Collection 2021</h3>
                 <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold mt-5'>Autumn Deal, discounts <span className='font-bold text-[#EB7700]'>up to 20%</span> are waiting for you…</h2>

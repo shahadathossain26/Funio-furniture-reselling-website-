@@ -8,7 +8,7 @@ import image6 from '../../../assets/metarials_images/marbel.png'
 
 const Metarials = () => {
     return (
-        <div className='lg:flex justify-between items-center mt-28 w-full'>
+        <div className='lg:flex justify-between items-center mt-28 w-full' data-aos="zoom-in" data-aos-duration="1000">
             <div className='px-8 md:px-10 lg:px-16 lg:w-1/2 mb-5 lg:mb-0'>
                 <h2 className='text-2xl md:text-3xl lg:text-5xl font-bold text-black mb-5'>We use high quality Materials</h2>
                 <p className='text-[12px] md:text-[14px] lg:text-[18px] opacity-80 mb-5'>Labore voluptas nihil molestiae sint delectus sint sequi volup tatem qia id omnis suscipit</p>

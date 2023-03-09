@@ -2,14 +2,15 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import background from '../../assets/homepage_banner/slider2-2.webp';
-// import BookingModal from './BookingModal/BookingModal';
+import BookingModal from './BookingModal/BookingModal';
 import ProductCard from './ProductCard';
 
 const Products = () => {
     // const { name, image, location, resale_price, original_price, years_of_use, publish_date, seller_name } = useLoaderData();
     const products = useLoaderData();
-    console.log(products)
+
     const [bookingProduct, setBookingProduct] = useState(null);
+    console.log(bookingProduct)
 
     // let category = "";
     // if (products.category_id = "6405b7b3145f7ba366bbc861") {
@@ -41,13 +42,13 @@ const Products = () => {
                     ></ProductCard>)
                 }
             </div>
-            {/* {
+            {
                 bookingProduct &&
                 <BookingModal
                     bookingProduct={bookingProduct}
                     setBookingProduct={setBookingProduct}
                 ></BookingModal>
-            } */}
+            }
         </section>
 
     );

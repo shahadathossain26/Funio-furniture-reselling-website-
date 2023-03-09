@@ -27,7 +27,8 @@ const ProductCard = ({ product, setBookingProduct }) => {
                         <span className='ml-[2px] md:ml-[4px] lg:ml-2 text-[6px] md:text-[12px] lg:text-[15px]'><del>${original_price}</del></span>
                     </div>
                     <div className='mt-[-8px] md:mt-1'>
-                        <button className='border border-black md:px-3 md:py-1 text-black font-semibold rounded text-[7px] px-1 py-1 md:text-[13px] lg:text-[16px]'>Book Now</button>
+                        <label onClick={() => setBookingProduct(product)} htmlFor="booking-modal" className='border border-black md:px-3 md:py-1 text-black font-semibold rounded text-[7px] px-1 py-1 md:text-[13px] lg:text-[16px] cursor-pointer'>Book Now</label>
+                        {/* <button onClick={() => setBookingProduct(product)} htmlFor="booking-modal" className='border border-black md:px-3 md:py-1 text-black font-semibold rounded text-[7px] px-1 py-1 md:text-[13px] lg:text-[16px]'>Book Now</button> */}
                     </div>
                 </div>
                 <div className='flex items-center invisible lg:visible'>

@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png'
 import { AiOutlineHome, AiOutlineDashboard } from "react-icons/ai";
 import { FaBlog } from "react-icons/fa";
 import { RiInformationLine } from "react-icons/ri";
 import './Header.css'
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext)
+    const handleLogout = () => {
+
+        logOut()
+            .then(() => {
+
+            })
+            .catch(err => console.error(err))
+    }
     return (
 
         <div className="navbar bg-base-100 px-10 sticky top-0 z-50 shadow-xl">
@@ -65,7 +75,10 @@ const Header = () => {
 
             </div>
             <div className="navbar-end">
-                <Link to='/login'><button className='text-[12px] md:text-[15px] lg:text-[18px] bg-black text-white px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-xl font-semibold'>LogIn</button></Link>
+                {
+                    user?.email ? <button onClick={handleLogout} className='text-[12px] md:text-[15px] lg:text-[18px] bg-black text-white px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-xl font-semibold'>LogOut</button>
+                        : <Link to='/login'><button className='text-[12px] md:text-[15px] lg:text-[18px] bg-black text-white px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-xl font-semibold'>LogIn</button></Link>
+                }
             </div>
         </div>
 

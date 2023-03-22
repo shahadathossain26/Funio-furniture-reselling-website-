@@ -61,7 +61,7 @@ const Register = () => {
             <div className='md:w-full lg:w-1/2 mb-16 lg:mb-0'>
                 <img className='md:mx-auto lg:mx-0' src={registerImage} alt="" />
             </div>
-            <div className='w-[385px] h-[660px] shadow-xl  border px-[29px] py-[25px] mx-auto'>
+            <div className='w-[385px] h-[540px] shadow-xl  border px-[29px] py-[25px] mx-auto'>
                 <h2 className='text-xl text-center text-black'>Register</h2>
 
                 <form onSubmit={handleSubmit(handleRegister)}>
@@ -103,8 +103,7 @@ const Register = () => {
 
                     <button className=' bg-black text-white px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-xl font-semibold w-full'>Register</button>
                     <p className='text-black'>Already have an account? <span className='text-primary'><Link to='/login'>Please Login</Link></span></p>
-                    <div className="divider mb-[25px] text-black">OR</div>
-                    <button className="btn btn-outline btn-primary w-full text-white">Continue With Goole</button>
+
                 </form>
             </div>
         </section>

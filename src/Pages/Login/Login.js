@@ -44,6 +44,7 @@ const Login = () => {
                 const user = result.user;
                 console.log(user);
                 saveUser(user?.displayName, user?.email)
+                navigate('/')
 
             })
             .catch(error => console.error(error))
@@ -54,7 +55,7 @@ const Login = () => {
             email,
             account_type: "Buyer"
         };
-        fetch('https://motor-mania-server.vercel.app/users', {
+        fetch('https://funio-server.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -106,7 +107,7 @@ const Login = () => {
                     <p className='text-black'>New to Doctors Portal? <span className='text-primary'><Link to='/register'>Create new account</Link></span></p>
                     <div className="divider mb-[25px] text-black">OR</div>
                     {/* <button onClick={handleGoogleLogin} className="btn btn-outline btn-primary w-full text-white">Continue With Google</button> */}
-                    <button className=' bg-white text-black border border-black px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-xl font-semibold w-full'>Continue With Google</button>
+                    <button onClick={handleGoogleLogin} className=' bg-white text-black border border-black px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-xl font-semibold w-full'>Continue With Google</button>
                 </form>
             </div>
         </section >
